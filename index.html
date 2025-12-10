@@ -31,7 +31,7 @@ cursor:pointer;">
  <!-- Output Message -->
  <p id="result" style="font-size:18px; margin-top:20px;font-weight:bold;"></p>
 </div>
-<img id="voteimg" src="../assets/checkvote.jpeg" style="display:block;
+<img id="voteimg" src="./checkvote.jpeg" style="display:block;
 margin:auto; margin-top:20px; width:150px; height:250px;width:300px; border-radius:50%;"
  alt="Voting Image"></img>
 <script>
@@ -54,7 +54,7 @@ margin:auto; margin-top:20px; width:150px; height:250px;width:300px; border-radi
  if (age < 0) {
  resultP.style.color = 'black';
  resultP.textContent = 'Age cannot be negative.';
- voteImg.src="../assets/novote.png";
+ voteImg.src="./novote.png";
  boxDiv.style.backgroundImage = 'radial-gradient(lightblue, #002ca6)';
  return;
  }
@@ -62,19 +62,20 @@ margin:auto; margin-top:20px; width:150px; height:250px;width:300px; border-radi
  if (age < 18) {
  resultP.style.color = 'black';
  resultP.textContent = 'You are NOT eligible to vote yet.';
- voteImg.src="../assets/novote.png";
+ voteImg.src="./novote.png";
  boxDiv.style.backgroundImage = 'radial-gradient(lightblue, #002ca6)';
  } else if (age === 18) {
  resultP.style.color = 'black';
  resultP.textContent = 'Congrats — you are now eligible to vote! Please register.';
- voteImg.src="../assets/18vote.jpg";
+ voteImg.src="./18vote.jpg";
  boxDiv.style.backgroundImage = 'radial-gradient(lightgreen, #003200)';
  } else {
  resultP.style.color = 'black';
  resultP.textContent = 'You are eligible to vote.';
- voteImg.src="../assets/canvote.png";
+ voteImg.src="./canvote.png";
 boxDiv.style.backgroundImage = 'radial-gradient(lightgreen, #003200)';
  }
  });
 </script>
 </body>
+
